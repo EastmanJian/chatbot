@@ -3,9 +3,11 @@ import com.ibm.watson.developer_cloud.assistant.v1.model.Context;
 import com.ibm.watson.developer_cloud.assistant.v1.model.InputData;
 import com.ibm.watson.developer_cloud.assistant.v1.model.MessageOptions;
 import com.ibm.watson.developer_cloud.assistant.v1.model.MessageResponse;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class WatsonAssistantTest {
+    @Ignore
     @Test
     public void sendQuestion() throws Exception {
         Assistant service = new Assistant("2018-02-16");
@@ -19,6 +21,7 @@ public class WatsonAssistantTest {
         System.out.println(response);
     }
 
+    @Ignore
     @Test
     public void multiQuestion() throws Exception {
 

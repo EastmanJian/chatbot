@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vitality Chatbot</title>
+    <style>
+        #msgDiag {
+            height: 30em;
+        }
+
+        .maxWidth {
+            width: 100%;
+        }
+
+        #sendBtn {
+            float: right;
+            box-sizing: border-box;
+            width: 10em;
+        }
+
+        #inputDiv {
+            box-sizing: border-box;
+            margin-right: 12em;
+        }
+
+        .largeFont {
+            font-size: large;
+        }
+    </style>
+    <script src="js/vitality.js"></script>
+</head>
+<body>
+<h2>Chatbot PoC - Vitality</h2>
+<textarea id="msgDiag" class="maxWidth">
+</textarea>
+<section class="maxWidth">
+    <button onclick="sendMsg()" id="sendBtn" class="largeFont">Send</button>
+    <div id="inputDiv">
+        <input type="text" id="msgInput" class="largeFont maxWidth" onkeyup="handleKeyUp()"/>
+    </div>
+</section>
+
+</body>
+</html>
