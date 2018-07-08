@@ -4,41 +4,24 @@
     <meta charset="UTF-8">
     <title>Vitality Chatbot</title>
     <style>
-        #msgDiag {
-            height: 30em;
+        #title {
+            text-align: center;
         }
-
-        .maxWidth {
-            width: 100%;
-        }
-
-        #sendBtn {
-            float: right;
-            box-sizing: border-box;
-            width: 10em;
-        }
-
-        #inputDiv {
-            box-sizing: border-box;
-            margin-right: 12em;
-        }
-
-        .largeFont {
-            font-size: large;
+        #my-botui-app {
+            margin:auto;
+            width: 40rem;
         }
     </style>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui-theme-default.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/botui/build/botui.min.js"></script>
     <script src="js/vitality.js"></script>
 </head>
 <body>
-<h2>Chatbot PoC - Vitality</h2>
-<textarea id="msgDiag" class="maxWidth">
-</textarea>
-<section class="maxWidth">
-    <button onclick="sendMsg()" id="sendBtn" class="largeFont">Send</button>
-    <div id="inputDiv">
-        <input type="text" id="msgInput" class="largeFont maxWidth" onkeyup="handleKeyUp()"/>
-    </div>
-</section>
-
+<h2 id="title">Chatbot PoC - Vitality Enquiry</h2>
+<div id="my-botui-app">
+    <bot-ui></bot-ui>
+</div>
 </body>
 </html>
